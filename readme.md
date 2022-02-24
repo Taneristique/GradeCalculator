@@ -1,0 +1,1 @@
+This is a simple code to calculate if i passed or redoubled a lesson.No copyright or something,I only practised ternary operator on this project.
