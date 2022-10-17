@@ -1,6 +1,6 @@
 import numpy as np 
 import json
-print("Grade Calculator by TanErIsTIQUe v1.0")
+print("Grade Calculator by TanErIsTIQUe v1.0.0")
 def agno(credit:list,grade:list,l:int,kr_LastSem=None,nxkr_lastSem=None):
     """The parameters that agno function needs must be given by config.json
     To give your lesson credits write them on credits_current_semester at config.json.
