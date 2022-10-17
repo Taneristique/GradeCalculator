@@ -1,0 +1,58 @@
+{
+    "Credits": {
+        "N": [
+            {
+                "AA": 4.0
+            },
+            {
+                "BA": 3.5
+            },
+            {
+                "BB": 3.0
+            },
+            {
+                "CB": 2.5
+            },
+            {
+                "CC": 2.0
+            },
+            {
+                "FF": 0.0
+            }
+        ],
+        "givenLetterCredits": [
+            "FF",
+            "CC",
+            "CB",
+            "BA",
+            "CB",
+            "FF",
+            "BB",
+            "CC",
+            "FF"
+        ],
+        "credit_sums_of_past_semesters": [
+            19.5
+        ],
+        "credits_current_semester": [
+            2.5,
+            2.5,
+            2.5,
+            2.5,
+            1.5,
+            2.5,
+            2.5,
+            2.0,
+            2.5
+        ],
+        "nxkrPast_semesters": [
+            64.0
+        ]
+    },
+    "Grades": 
+        {
+            "ssi": 100,
+            "absence": 100,
+            "final": 50
+        }
+}
