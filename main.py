@@ -23,11 +23,11 @@ def agno(credit:list,grade:list,l:int,kr_LastSem=None,nxkr_lastSem=None):
     ano=nxkr/kr_s
     AGNO=round(nxkr/ano if kr_LastSem==None or nxkr_lastSem==None else nxkr/kr_s )  
     print(f'\nCredits : {kr} \nsum of credits : {kr_s}\nLetter Grades : {n}\nnxkr : {nxkr}\nano : {ano}\nagno is {AGNO}')
-def didIpast(ssi:float,absence:float,final:float):
+def didIpass(ssi:float,absence:float,final:float):
     """Check if student passed.This function will work if all the sections in Grades key are filled """
     note=((absence*0.20)+(ssi*0.80))*0.20+final*0.80
     print("You are passed from the calculated lesson!" if note>=60.0 else "Failed from the calculated lesson!")
-def howMuchtoPast(ssi:float,absence:float):
+def howMuchtoPass(ssi:float,absence:float):
     "Check required final exam point for student this function will work if only final section in Grades at config.json remained null"
 
     need=abs((60-((absence*0.20)+(ssi*0.80)))/0.80)
@@ -57,8 +57,8 @@ for word in letter_grades:
 #print("letter_grades are ",letter_grades) #remove in case you want to see if for statement makes its task properly
 agno(credits,letter_grades,len(credits),past_semesters_credits,nxkr_past)
 if (finalExamGrade==None and ssiGrade!=None) and absenceGrade!=None:
-    howMuchtoPast(ssiGrade,absenceGrade)
+    howMuchtoPass(ssiGrade,absenceGrade)
 elif (finalExamGrade!=None and ssiGrade!=None) and absenceGrade!=None:
-    didIpast(ssiGrade,absenceGrade,finalExamGrade)
+    didIpass(ssiGrade,absenceGrade,finalExamGrade)
 else:
     print("You have to write ssi and absence values at least to be able to make a calculation on a specific lesson.")
