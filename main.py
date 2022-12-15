@@ -29,8 +29,7 @@ def didIpass(ssi:float,absence:float,final:float):
     print("You are passed from the calculated lesson!" if note>=60.0 else "Failed from the calculated lesson!")
 def howMuchtoPass(ssi:float,absence:float):
     "Check required final exam point for student this function will work if only final section in Grades at config.json remained null"
-
-    need=abs((60-((absence*0.20)+(ssi*0.80)))/0.80)
+    need=abs((60-((absence*0.20)+(ssi*0.80))*0.20)*100/80)
     print(f'You must get {need} point to pass from the calculated lesson!')
 #load json file 
 with open('config.json') as conf:
